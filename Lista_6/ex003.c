@@ -15,6 +15,7 @@ float media_geral(TALUNO **mat, int n, char *turma){
     float media = 0;
     int cont = 0;
     for(int i = 0; i < n; i++){
+        //if(strcmp(mat[i]->turma,turma)==0)
         if ((*mat[i] ->turma) == (*turma)){
             media += ((mat[i]->p1)+(mat[i]->p2))/2;
             cont += 1;
