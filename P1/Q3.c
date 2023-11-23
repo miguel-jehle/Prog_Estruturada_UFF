@@ -136,12 +136,14 @@ int *resposta(int **mat, int lin, int col){
     if(ver3) cont++;
     if(ver4) cont++;
 
+    printf("O contador eh: %d\n",cont);
+
     //Criando o vetor de resposta
-    int *resp = (int*)malloc(sizeof(int)*cont);
+    int *resp = (int*)malloc(sizeof(int)*(cont+1));
     resp[0] = cont;
 
     //Preenchendo com as caracteristicas que foram obtidas
-    for(int i = 1; i < cont; i++){
+    for(int i = 1; i < cont+1; i++){
         if(ver1 != 0){
             resp[i] = 1;
             i++;
@@ -161,7 +163,7 @@ int *resposta(int **mat, int lin, int col){
     }
 
     printf("A resposta eh: ");
-    for(int i = 0; i < lin; i++){
+    for(int i = 0; i <= cont; i++){
         printf("%d ", resp[i]);
     }
 
