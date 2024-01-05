@@ -8,26 +8,25 @@ entrada. A função deve obedecer o seguinte protótipo: TFila* inv_fila (TFila 
 com todos invertidos pela lógica de pilha e então a partir da pilha jogar para fila pra resp*/
 
 TF* inv_fila (TF *f){
-    //Criando a pilha auxiliar
-    TP* pilha_aux = TP_inicializa();
+  //Criando a pilha auxiliar
+  TP* pilha_aux = TP_inicializa();
 
-    //Agora precisamos pegar os elementos da fila original e jogar na pilha
-    while(f->ini){
-        int x = TF_retira(f);
-        TP_push(pilha_aux,x);
-    }
+  //Agora precisamos pegar os elementos da fila original e jogar na pilha
+  while(!TF_vazia(f)){
+      int x = TF_retira(f);
+      TP_push(pilha_aux,x);
+  }
 
-    //Agora criamos a fila de resposta
-    TF* fila_resp = TF_inicializa();
+  //Agora criamos a fila de resposta
+  TF* fila_resp = TF_inicializa();
 
-    while(pilha_aux->topo){
-        int x = TP_pop(pilha_aux);
-        TF_insere(fila_resp,x);
-    }
+  while(!TP_vazia(pilha_aux)){
+      int x = TP_pop(pilha_aux);
+      TF_insere(fila_resp,x);
+  }
 
-    TP_libera(pilha_aux);
-
-    return fila_resp;
+  TP_libera(pilha_aux);
+  return fila_resp;
 }
 
 int main(void){

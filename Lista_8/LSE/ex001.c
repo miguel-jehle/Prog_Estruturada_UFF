@@ -16,7 +16,7 @@ TP* f2p (TF *f){
     TP* pilha_aux = TP_inicializa();
 
     //Loop para pegar os elementos e jogar na pilha auxiliar
-    while(f->ini){
+    while(!TF_vazia(f)){
         int x = TF_retira(f);
         TP_push(pilha_aux, x);
     }
@@ -24,15 +24,14 @@ TP* f2p (TF *f){
     TP* pilha_resp = TP_inicializa();
 
     //Loop para pegar os elementos da pilha auxiliar e jogar na resp
-    while(pilha_aux->topo){
+    while(!TP_vazia(pilha_aux)){
         int x = TP_pop(pilha_aux);
         TP_push(pilha_resp,x);
     }
 
     //Liberando a memoria pra não dar ruim
     TP_libera(pilha_aux);
-    TF_libera(f);
-
+  
     return pilha_resp;
 }
 

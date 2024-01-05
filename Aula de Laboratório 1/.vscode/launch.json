@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/migue/Documents/Faculdade/2_periodo/Prog Estruturada/Aula de Laboratório",
-      "program": "c:/Users/migue/Documents/Faculdade/2_periodo/Prog Estruturada/Aula de Laboratório/build/Debug/outDebug",
+      "cwd": "c:/Users/migue/Documents/Faculdade/2_periodo/Prog Estruturada/Aula de Laboratório 1",
+      "program": "c:/Users/migue/Documents/Faculdade/2_periodo/Prog Estruturada/Aula de Laboratório 1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

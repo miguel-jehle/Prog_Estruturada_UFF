@@ -12,7 +12,7 @@ TF* p2f (TP *p){
     //Criando a fila de retorno
     TF* fila_resp = TF_inicializa();
     //Loop para pegar todos os valores da pilha
-    while(p->topo){
+    while(!TP_vazia(p)){
         //Pegando o valor por meio do pop
         int x = TP_pop(p);
         //E então inserindo o valor pego na fila

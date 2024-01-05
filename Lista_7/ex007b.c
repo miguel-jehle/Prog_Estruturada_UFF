@@ -18,7 +18,7 @@ void i_p (TLSE *l){
  }
 
  TLSE* p = l;
- for(int i = 0; i < cont; i++){
+ for(int i = 0; i <= cont; i++){
     if(p->info % 2 == 0){
         TLSE* troca = p;
         int x = p ->info;

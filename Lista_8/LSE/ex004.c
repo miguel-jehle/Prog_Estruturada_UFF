@@ -12,21 +12,20 @@ void retira_pares (TP *p){
     TP* pilha_aux = TP_inicializa();
 
     //Loop para percorrer toda a pilha
-    while(p->topo){
-        //Se for par apaga
-        if(p->topo->info % 2 == 0){
-            int x = TP_pop(p);
-        //Se for impar pega e insere na aux
-        } else {
-            int x = TP_pop(p);
+    while(!TP_vazia(p)){
+        //Apaga e pega
+        int x = TP_pop(p);
+        //Se for par joga para aux
+        if(x % 2 == 0){
             TP_push(pilha_aux,x);
         }
     }
     //Devolve para a original
-    while(pilha_aux->topo){
+    while(!TP_vazia(pilha_aux)){
         int x = TP_pop(pilha_aux);
         TP_push(p, x);
     }
+
     TP_libera(pilha_aux);
     return;
 }
@@ -46,7 +45,7 @@ int main(void){
 
     retira_pares(p);
     printf("A pilha sem os pares eh: \n");
-    imprime(p);
+    TP_imprime(p);
     printf("\n");
 
     TP_libera(p);
