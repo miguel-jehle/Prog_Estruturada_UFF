@@ -1,11 +1,3 @@
-//CORREÇÕES PRINCIPAIS FEITAS:
-//      Linha 12: Mudança na condição inicial visto que, a usada na prova não servia como uma parada para a recursão
-//      Linha 26: Dei o free apontado na correção
-
-//COMENTÁRIOS: 
-//      Foi a questão que mais tive de mudar, porque fiz de última hora na prova, então comentei linha por linha, para demosntrar meu raciocinio
-//
-
 #include "TLSE.c"
 
 void ret_nao_mult_N(TLSE *l, int n){ // recursiva

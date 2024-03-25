@@ -1,15 +1,3 @@
-//CORREÇÕES REALIZADAS:
-//    Linha 15: Colocando o conteúdo de posição como zero, para caso a lista seja nula tenha algo em pos,como pedido
-//    Linha 29: Adicionei um if para evitar o erro de segmentação
-
-//COMENTÁRIOS:
-//    Professora, foram só duas linhas adicionadas, o erro principal, relacionado a segmentação, mas que foi prevenido
-//    somente com um if, por favor tente reconsiderar pensando nisso, por favor!!!. Além disso, sobre o erro de dizer que 
-//    o conteúdo de pos é zero, foi pelo fato de achar que como não havia lista (nula), não haveria posição alguma. Foi por pura questão
-//    de interpretação, mas pela linha 18, dá pra ver que eu pensei nesse caso, mas sabia que era necessário pensar no pos cuidado sobre a lista ser nula ou não, por favor considere isso!!! 
-
-
-
 #include"TLSE.c"
 
 TLSE *meio (TLSE *l, int *pos){

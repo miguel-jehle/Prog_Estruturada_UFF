@@ -1,13 +1,3 @@
-//CORREÇÕES REALIZADAS:
-//  Linha 11: Inicializei o aux fora do if da linha 12, para usá-lo como verificação (linha 35), além dos mallocs
-//            foi a ÚNICA alteração feita, visto que todo o resto do algorítmo era funcional como conversamos no quadro
-//            e fora de sala, por favor, a senhora poderia reconsiderar a pontuação?
-
-//  Linha 24, 34, 48 e 55: Mallocs apontados corrigidos
-
-//COMENTÁRIOS: 
-//  Professora, a maior correção feita, assim como conversamos, foi sobre a inicialização do aux fora do if (tratar o primeiro caso).
-//  Por favor, você pode reconsiderar a nota? 
 
 #include"TLSE.c"
 #include<stdlib.h>

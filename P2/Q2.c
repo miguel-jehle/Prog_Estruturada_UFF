@@ -1,11 +1,3 @@
-//CORREÇÕES REALIZADAS:
-//    Linha 15: Mudei a inicialização do contador para "= 0"    
-//    Linha 37 e 38: Inicializei as variáveis dentro do for mais externo
-//    Linha 43 até 56: São trechos desnecessários, como conversamos, mas fiz por pura segurança, por favor, considera
-//                     que apesar de inútil, ela não quebra meu código. Falei disso na linha 42.
-//    Linha 59 até 70: Trecho que corrigimos juntos em sala, por favor reconsidere!!!
-
-
 #include "TP.c"
 #include<limits.h>
 
@@ -38,8 +30,6 @@ TP *merge(TP **vetp, int n){
     int maior = INT_MIN;
     for(int j = 0; j < n; j++){
       TP* bckp = TP_inicializa();
-
-        //Deixei essa parte desnecessária para mostrar que mesmo sendo burrice, foi consciente e funciona (esta mensagem foi solicitada por você :)) por favor não ver como ofensa!!!
         while(!TP_vazia(copia[j])){
           int x = TP_pop(copia[j]);
           if(x > maior){
