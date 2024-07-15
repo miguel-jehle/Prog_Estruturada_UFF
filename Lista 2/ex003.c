@@ -7,6 +7,7 @@ void dec_to_bin(int n){
         dec_to_bin(n/2);
         printf("%d", n%2);
     }
+    return;
 }
 
 int main(){
